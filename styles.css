@@ -4,6 +4,9 @@
 
 html {
     font-size: 62.5%;
+    background-color: #212121;
+    color: #dfcece;
+    font-family: Inter, sans-serif;
 }
 
 ul {

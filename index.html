@@ -3,31 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Working Title</title>
+    <title>Rainy Day Cafe</title>
+    <script src="https://kit.fontawesome.com/f0d4f6da52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter" />
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <div id="main-wrapper">
       <header id="header">
         <div class="logo">
-          <img id="header-img" src="" alt="" />
+          <img id="header-img" src=""
+          alt="font awesome cloud with heavy rain logo" />
         </div>
         <nav id="nav-bar">
           <ul>
             <li>
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#Menu">Menu</a>
             </li>
             <li>
-              <a class="nav-link" href="#">Items</a>
+              <a class="nav-link" href="#About_Us">About Us</a>
             </li>
             <li>
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="#Feedback">Feedback</a>
             </li>
           </ul>
         </nav>
       </header>
       <main>
-      <div>
+        <div class="hero">
+          <h2>Bespoke Espresso Beverages</h2>
         <section>
           <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
             <ul>
@@ -35,18 +39,41 @@
                 <input id="mail" type="email" name="email" placeholder="email">
               </li>
               <li>
-                <input id="submit" type="submit" value="send">
+                <input id="btn" type="button" name="button" value="signup">
               </li>
             </ul>
           </form>
         </section>
       </div>
-      <div>
-        <section>
-            <p></p>
+      <div class="cards">
+        <section id="Menu">
+          <h3>Menu</h3>
+            <ul>
+              <li>Espresso ... $2.50</li>
+              <li>Caƒé Latté ... $3.50</li>
+              <li>Caƒé Mocha ... $4.50</li>
+            </ul>
         </section>
-      </div>
+        <section id="#About_Us">
+          <h3>About Us</h3>
+          <ul>
+            <li>Established 2023 | Your-City, Country</li>
+            <li>We strive to make unique crafted coffee beverages</li>
+            <li>Sustainable, free-range, vegan coffee beans</li>
+          </ul>
+        </section>
+        <section id="Feedback">
+          <h3>Feedback</h3>
+          <textarea>Share your ideas!</textarea>
+          <input id="btn" type="button" name="button" value="send">
+        </section>
     </div>
+    <footer>
+      powered by:<br><br>
+      <i class="fa-brands fa-free-code-camp"></i>
+      <a href="https://www.freecodecamp.org">freeCodeCamp</a>
+    </footer>
+  </div>
   </main>
   </body>
 </html>
