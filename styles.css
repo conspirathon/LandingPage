@@ -2,6 +2,8 @@
 
 *, ::before, ::after {
     box-sizing: border-box;
+    min-width: none;
+    max-width: none;
 }
 
 html {
@@ -9,6 +11,15 @@ html {
     background-color: #212121;
     color: #dfcece;
     font-family: Inter, sans-serif;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body {
@@ -88,4 +99,71 @@ li, p, footer {
     cursor: pointer;
     background-color: #dfcece;
     color: #212121;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns:
+    repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows:
+    max-content 200px 1fr;
+    border: 1px solid #dfcece;
+    border-radius: 5px;
+    align-content: center;
+}
+
+.card:first-of-type {
+    border: 1px solid #212121;
+}
+
+.card i, h3 {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.card li {
+    /* position: relative;
+    bottom: 25%; */
+    display: grid;
+    align-self: auto;
+    justify-self: auto;
+}
+
+.card textarea {
+    background-color: inherit;
+    color: inherit;
+}
+
+.card #btn {
+    background-color: inherit;
+    color: inherit;
+    padding: 1rem;
+    margin-top: 2.5rem;
+    border: 1px solid #dfcece;
+    border-radius: 5px;
+}
+
+.card #btn:hover {
+    cursor: pointer;
+    background-color: #dfcece;
+    color: #212121;
+}
+
+footer {
+    position: relative;
+    left: 87%
+}
+
+footer a {
+    color: orangered;
+    cursor: pointer;
+}
+
+footer a:hover {
+    color: inherit;
 }
