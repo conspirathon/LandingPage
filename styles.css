@@ -11,6 +11,12 @@ html {
     font-family: Inter, sans-serif;
 }
 
+body {
+    max-width: 1440px;
+    min-width: 540px;
+    border: 2px solid;
+}
+
 ul {
     list-style: none;
 }
@@ -18,12 +24,68 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 h1, h2, h3, i {
     font-size: 3rem;
 }
 
-li, footer {
+li, p, footer {
     font-size: 2rem;
+}
+
+#header {
+    background-image: url(./images/shiplap.jpg);
+}
+
+#header h1 {
+    text-align: center;
+}
+
+#nav-bar li {
+    display: inline-block;
+    padding: 1rem;
+    position: relative;
+    left: 79%;
+}
+
+.hero {
+    text-align: center;
+    margin: 2.5rem;
+}
+
+.hero h2 {
+    font-size: 5rem;
+}
+
+.hero-img {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 900px;
+    margin: 2.5rem;
+}
+
+#form input {
+    background-color: inherit;
+    border: 1px solid #dfcece;
+    border-radius: 5px;
+    color: inherit;
+    width: 20%;
+}
+
+.hero #mail {
+    padding: .5rem;
+}
+
+.hero #btn {
+    width: 10%;
+    padding: 1rem;
+    margin-top: 2.5rem;
+}
+
+.hero #btn:hover {
+    cursor: pointer;
+    background-color: #dfcece;
+    color: #212121;
 }
